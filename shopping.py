@@ -17,7 +17,7 @@ shopping_list = {
 }
 
 def customer():
-    user_action = input("What would u like to buy?")
+    user_action = input("What would u like to do?")
     user_number = input("How many?")
 
     def print_bill():
@@ -27,6 +27,7 @@ def customer():
             {cart[i]} {cart_number[i]}
             ''')  
     def check_out():
+        
         print_bill()
         print("Thank you for coming! Hope u come again!" )
         global number_of_items
